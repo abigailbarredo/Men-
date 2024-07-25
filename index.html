@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100%;
+        padding-right: 10%;
+        padding-left: 10%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: url('https://logolook.net/wp-content/uploads/2023/03/Vivienne-Westwood-Emblem-768x432.png');
+        background-size: 100px 85px; /* Tamaño de los logos */
+        background-repeat: repeat;
+        background-position: center center;
+        background-attachment: fixed;
+      }
+      h1 {
+        background-color: #978c57;
+        color: #ffffff;
+        padding: 10px 40px;
+        border-radius: 100px;
+      }
+      h3 {
+        text-align: center;
+      }
+      .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .separator {
+        background-color: #978c57;
+        width: 120px;
+        height: 10px;
+        border-radius: 25px;
+      }
+      table {
+        width: 100%;
+      }
+      .title {
+        background-color: #d4ca9a;
+        padding: 0px;
+      }
+      .profile-photo-table {
+        background-color: #fff9e6;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      .profile-photo {
+        width: 150px;
+        border-radius: 50%;
+        border: 2px solid #978c57;
+      }
+      .buttons {
+        background-color: #fff9e6;
+        padding: 20px;
+      }
+      .menu-button {
+        text-decoration: none;
+        display: block;
+        background-color: #978c57;
+        border-radius: 10px;
+        padding: 10px;
+        font-weight: 600;
+        color: white;
+        text-align: center;
+        margin: 10px 0px;
+        transition: background-color 0.3s, box-shadow 0.3s;
+      }
+      .menu-button:hover {
+        background-color: #d4ca9a;
+        box-shadow: 0 0 10px #ff99cc, 0 0 20px #ff99cc, 0 0 30px #ff99cc;
+      }
+      .shadow {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+      }
+      .shadow-sm {
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 class="shadow">Abigail Barredo Castillo</h1>
+        <div class="separator shadow-sm"></div>
+      </div>
+      <br />
+      <table class="shadow" style="width: 100%">
+        <tr>
+          <th class="title" colspan="2"><h3>Menu</h3></th>
+        </tr>
+        <tr>
+          <td class="buttons">
+            <a href="https://abigailbarredo.github.io/Cancionero/" class="menu-button shadow-sm">Cancionero</a>
+            <a href="https://abigailbarredo.github.io/Mec-nica/" class="menu-button shadow-sm">Mecanica</a>
+            <a href="https://abigailbarredo.github.io/Flores/" class="menu-button shadow-sm">2do Parcial</a>
+            <a href="https://abigailbarredo.github.io/Flores/" class="menu-button shadow-sm">Ordinario</a>
+          </td>
+          <td class="profile-photo-table">
+            <img src="abigail.png" class="profile-photo shadow" />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
